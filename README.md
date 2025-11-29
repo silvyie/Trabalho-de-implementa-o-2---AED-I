@@ -1,4 +1,20 @@
-# Trabalho de implementação 2 - AED I
+# Trabalho de implementação 2 - AED I + Aviso
+Aviso: Durante o vídeo tem um momento que uma das linhas do código no vscode aparece em amarelo, mas não é erro, o motivo é esse:
+
+    struct ListNode* n1 = criarNo(1);
+    struct ListNode* n2 = criarNo(2);
+    struct ListNode* n3 = criarNo(3);
+    struct ListNode* n4 = criarNo(4);
+    struct ListNode* n5 = criarNo(5);
+
+    n1->next = n2;
+    n2->next = n3;
+    n3->next = n4;
+    n4->next = n5;
+    n5->next = n6;
+    n6->next = n7;
+Em um dos meus testes que fiz eu esqueci de apagar as linhas n5->next = n6; e n6->next = n7; foi por isso que estava amarelo, não era um erro.
+    
 Nome: Silvana Dias
 
 Turma: T2
